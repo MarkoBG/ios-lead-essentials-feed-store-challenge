@@ -87,10 +87,9 @@
 		08CE2B8D2285BBD100183A1B /* FeedStoreChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				EF547964243A5AF50038B68F /* Core Data */,
 				08CE2BA72285BCC600183A1B /* LocalFeedImage.swift */,
 				08CE2BA52285BCB600183A1B /* FeedStore.swift */,
-				EF5479382439F8100038B68F /* CoreDataFeedStore.swift */,
-				EF547961243A17C20038B68F /* CoreDataFeedStore.xcdatamodeld */,
 				08CE2B8F2285BBD100183A1B /* Info.plist */,
 			);
 			path = FeedStoreChallenge;
@@ -116,6 +115,15 @@
 				08CE2BAD2285BCE700183A1B /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */,
 			);
 			path = FeedStoreSpecs;
+			sourceTree = "<group>";
+		};
+		EF547964243A5AF50038B68F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF5479382439F8100038B68F /* CoreDataFeedStore.swift */,
+				EF547961243A17C20038B68F /* CoreDataFeedStore.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
