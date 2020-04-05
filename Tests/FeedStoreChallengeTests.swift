@@ -5,6 +5,23 @@
 import XCTest
 import FeedStoreChallenge
 
+class CoreDataFeedStore: FeedStore {
+    
+    func deleteCachedFeed(completion: @escaping DeletionCompletion) {
+        
+    }
+    
+    func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletion) {
+        
+    }
+    
+    func retrieve(completion: @escaping RetrievalCompletion) {
+        completion(.empty)
+    }
+    
+    
+}
+
 class FeedStoreChallengeTests: XCTestCase, FeedStoreSpecs {
 	
 //
@@ -14,9 +31,9 @@ class FeedStoreChallengeTests: XCTestCase, FeedStoreSpecs {
 //
 
 	func test_retrieve_deliversEmptyOnEmptyCache() {
-//		let sut = makeSUT()
-//
-//		assertThatRetrieveDeliversEmptyOnEmptyCache(on: sut)
+		let sut = makeSUT()
+
+		assertThatRetrieveDeliversEmptyOnEmptyCache(on: sut)
 	}
 
 	func test_retrieve_hasNoSideEffectsOnEmptyCache() {
@@ -88,8 +105,16 @@ class FeedStoreChallengeTests: XCTestCase, FeedStoreSpecs {
 	// - MARK: Helpers
 	
 	private func makeSUT() -> FeedStore {
-		fatalError("Must be implemented")
+		let sut = CoreDataFeedStore()
+        trackForMemoryLeak(sut)
+        return sut
 	}
+    
+    private func trackForMemoryLeak(_ instance: AnyObject, file: StaticString = #file, line: UInt = #line) {
+        addTeardownBlock { [weak instance] in
+            XCTAssertNil(instance, "Instance should have been deallocated", file: file, line: line)
+        }
+    }
 	
 }
 
