@@ -18,6 +18,7 @@
 		08CE2BB52285BEF100183A1B /* FeedStoreChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CE2BB42285BEF100183A1B /* FeedStoreChallengeTests.swift */; };
 		EF5479392439F8100038B68F /* CoreDataFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5479382439F8100038B68F /* CoreDataFeedStore.swift */; };
 		EF547963243A17C20038B68F /* CoreDataFeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF547961243A17C20038B68F /* CoreDataFeedStore.xcdatamodeld */; };
+		EF547966243A5B700038B68F /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF547965243A5B700038B68F /* CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		08CE2BB42285BEF100183A1B /* FeedStoreChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreChallengeTests.swift; sourceTree = "<group>"; };
 		EF5479382439F8100038B68F /* CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStore.swift; sourceTree = "<group>"; };
 		EF547962243A17C20038B68F /* CoreDataFeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataFeedStore.xcdatamodel; sourceTree = "<group>"; };
+		EF547965243A5B700038B68F /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				EF5479382439F8100038B68F /* CoreDataFeedStore.swift */,
 				EF547961243A17C20038B68F /* CoreDataFeedStore.xcdatamodeld */,
+				EF547965243A5B700038B68F /* CoreDataHelpers.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF547966243A5B700038B68F /* CoreDataHelpers.swift in Sources */,
 				EF5479392439F8100038B68F /* CoreDataFeedStore.swift in Sources */,
 				08CE2BA62285BCB600183A1B /* FeedStore.swift in Sources */,
 				EF547963243A17C20038B68F /* CoreDataFeedStore.xcdatamodeld in Sources */,
